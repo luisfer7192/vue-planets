@@ -1,4 +1,4 @@
-# vue-planets
+# Star Wars data
 
 ## Project setup
 ```
