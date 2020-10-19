@@ -1,0 +1,11 @@
+.logo {
+  max-height: 3.75rem;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.navbar-item {
+  color: #ffde06;
+}
