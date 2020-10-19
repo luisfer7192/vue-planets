@@ -1,8 +1,8 @@
 import axios from "../../utils/axios"; // install axios and config it when you want to use the endpoints
 
-export const getPlanets = async (page = null) => {
+export const getCharacters = async (page = null) => {
   try {
-    const url = `planets${page ? `/?page=${page}` : ""}`;
+    const url = `people${page ? `/?page=${page}` : ""}`;
     const response = await axios.get(url, { crossdomain: true });
     if (response.status === 200) {
       return response.data;
@@ -14,9 +14,9 @@ export const getPlanets = async (page = null) => {
   }
 };
 
-export const getPlanet = async (id) => {
+export const getCharacter = async (id) => {
   try {
-    const response = await axios.get(`planets/${id}`, { crossdomain: true });
+    const response = await axios.get(`people/${id}`, { crossdomain: true });
     if (response.status === 200) {
       return response.data;
     }

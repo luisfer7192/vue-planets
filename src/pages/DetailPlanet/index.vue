@@ -1,6 +1,6 @@
 <template>
   <section class="blog-posts">
-    <div class="container">
+    <div class="container" v-if="Object.entries(planet).length">
       <div class="columns">
         <div class="column is-10 is-offset-1">
           <div class="columns featured-post is-multiline">
@@ -48,9 +48,6 @@ export default {
   name: "DetailPlanet",
   methods: {
     ...mapActions(["getPlanet"]),
-    onPageChange(page) {
-      this.getPlanets(page);
-    },
   },
   computed: {
     ...mapState({

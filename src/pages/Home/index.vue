@@ -22,11 +22,6 @@
 <script>
 export default {
   name: "Home",
-  methods: {
-    navigateToSecondView() {
-      this.$router.push({ name: "calendarView" });
-    },
-  },
 };
 </script>
 

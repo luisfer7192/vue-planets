@@ -7,7 +7,6 @@ export const mutations = {
     Vue.set(state, "planets", planets);
   },
   setCurrentPlanet(state, data) {
-    console.log({ data });
     const planet = parsePlanet(data);
     Vue.set(state, "currentPlanet", planet);
   },

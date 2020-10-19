@@ -16,6 +16,9 @@
       <b-navbar-item @click.native="navigateTo('planetsPage')">
         Planets
       </b-navbar-item>
+      <b-navbar-item @click.native="navigateTo('charactersPage')">
+        Characters
+      </b-navbar-item>
     </template>
   </b-navbar>
 </template>
