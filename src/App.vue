@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <router-view name="header-top"></router-view>
-    <div class="loading" v-show="isLoading">Is loading...</div>
+    <div class="loading" v-show="isLoading"></div>
     <b-loading is-full-page v-model="isLoading"></b-loading>
     <div class="container">
       <div class="section">
